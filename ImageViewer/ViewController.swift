@@ -45,6 +45,19 @@ var pictures = [String]()
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //type cast to dvc to access its property.
+        if let detailedVc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            
+            detailedVc.selectedImage = pictures[indexPath.row]
+            
+            navigationController?.pushViewController(detailedVc, animated: true)
+            
+        }
+        
+        
+    }
 
 
 
