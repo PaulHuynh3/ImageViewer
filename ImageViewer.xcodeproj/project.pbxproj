@@ -82,6 +82,15 @@
 				DA1689DF1FBA8E5D00D59F1B /* Main.storyboard */,
 				DA1689E21FBA8E5D00D59F1B /* Assets.xcassets */,
 				DA1689E41FBA8E5D00D59F1B /* LaunchScreen.storyboard */,
+				DA168A171FBAA84000D59F1B /* Pictures */,
+				DA1689E71FBA8E5D00D59F1B /* Info.plist */,
+			);
+			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		DA168A171FBAA84000D59F1B /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
 				DA168A031FBAA1BB00D59F1B /* nssl0033.jpg */,
 				DA168A051FBAA1BB00D59F1B /* nssl0034.jpg */,
 				DA168A021FBAA1BB00D59F1B /* nssl0041.jpg */,
@@ -92,9 +101,8 @@
 				DA168A0A1FBAA1BC00D59F1B /* nssl0049.jpg */,
 				DA168A011FBAA1BB00D59F1B /* nssl0051.jpg */,
 				DA168A041FBAA1BB00D59F1B /* nssl0091.jpg */,
-				DA1689E71FBA8E5D00D59F1B /* Info.plist */,
 			);
-			path = ImageViewer;
+			path = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
