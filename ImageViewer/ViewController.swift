@@ -23,13 +23,28 @@ var pictures = [String]()
             if item.hasPrefix("nssl"){
                 //load pictures
                 pictures.append(item)
-                print(pictures)
             }
             
         }
         
     }
-
+    
+    
+    
+    
+    //MARK: tableview datasource
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pictures.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PictureIdentifier", for: indexPath)
+        cell.textLabel?.text = pictures[indexPath.row]
+        return cell
+        
+    }
+    
 
 
 
